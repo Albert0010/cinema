@@ -1,7 +1,6 @@
 import { TSeat } from "@/api/seats/type";
 import { ITemplateDemoProps } from "@/components/reusable/Timeline";
 import { ISeat } from "@/components/type";
-import { Event } from "@/components/type";
 import { Dispatch, SetStateAction } from "react";
 
 
@@ -15,7 +14,6 @@ const setSeats = (seats:Pick<ISeat, "id" | "available">[],row_count:string,colum
     return seats;
 }
 
-
 const sortEventsByEndDate = (events: ITemplateDemoProps[]): ITemplateDemoProps[] => {
   return events.sort((a, b) => {
     const endDateA = new Date(a.date || "");
@@ -26,4 +24,5 @@ const sortEventsByEndDate = (events: ITemplateDemoProps[]): ITemplateDemoProps[]
 const handleChange = (set:Dispatch<SetStateAction<string>>) => (event: React.ChangeEvent<HTMLInputElement>) => {
   set(event.target.value);
 }
+
 export {setSeats,sortEventsByEndDate,handleChange}

@@ -1,6 +1,5 @@
 import { getSchedule } from '@/api/schedules';
 import { getSeats } from '@/api/seats';
-import BookSeatsForm from '@/components/seats/BookSeatsForm';
 import SeatMap from '@/components/seats/SeatMap'
 import { setSeats } from '@/constants/constants';
 

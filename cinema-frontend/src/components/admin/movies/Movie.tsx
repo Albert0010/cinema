@@ -37,7 +37,7 @@ export default function Movie({id,name,setMovies,genre,rating,movies,...props}:I
                 <button className='border border-black p-2 bg-primary' onClick={()=>handleDelete(id)}>Delete</button>
                 <button className='border border-black p-2 bg-primary' onClick={handleEditClick}>Edit</button>
             </>}
-            {!!isClicked && <EditMoviesForm {...props} handleSave={handleSave} id={id} movies={movies} handleEditClick={handleEditClick}/>}
+            {isClicked && <EditMoviesForm {...props} handleSave={handleSave} id={id} movies={movies} handleEditClick={handleEditClick}/>}
         </div>
     )
 }

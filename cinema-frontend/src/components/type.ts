@@ -11,8 +11,4 @@ interface ISeat {
 type THandleSeatClickArgs = {
      column_value: number, row_value: number
 };
-interface Event {
-    id: number;
-    date: string;
-  }
-export type {ISeat,THandleSeatClickArgs,Event}
+export type {ISeat,THandleSeatClickArgs}

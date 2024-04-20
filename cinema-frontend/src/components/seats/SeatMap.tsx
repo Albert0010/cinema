@@ -28,7 +28,7 @@ export default function SeatMap ({ seats:defaultSeats, column_count,schedule_id,
       setNewSeats(seats);
       const a = await addTicket(+schedule_id,name,email);
   }
-  
+
     return (
       <div className="flex justify-between w-full p-6">
             <div className={`w-[500px] flex flex-wrap gap-2`}>
@@ -39,7 +39,7 @@ export default function SeatMap ({ seats:defaultSeats, column_count,schedule_id,
               />
           </div>
         ))}
-        
+
       </div>
       <BookSeatsForm email={email} name={name} setEmail={setEmail} setName={setName} setValid={setValid}/>
       </div>

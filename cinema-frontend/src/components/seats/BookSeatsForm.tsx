@@ -1,4 +1,4 @@
-import { ChangeEvent, Dispatch, SetStateAction, useEffect, useState } from 'react';
+import { ChangeEvent, Dispatch, SetStateAction, useEffect } from 'react';
 import CustomInput from '../reusable/CustomTextArea';
 
 interface IBookSeatsFormProps {
@@ -24,15 +24,15 @@ export default function BookSeatsForm({setValid,name,email,setEmail,setName}:IBo
 
   return (
     <div className='flex flex-col gap-2'>
-      <CustomInput 
-        value={name} 
-        onChange={handleChange(setName)} 
-        placeholder="Name" 
+      <CustomInput
+        value={name}
+        onChange={handleChange(setName)}
+        placeholder="Name"
       />
-      <CustomInput 
-        value={email} 
-        onChange={handleChange(setEmail)} 
-        placeholder="Email" 
+      <CustomInput
+        value={email}
+        onChange={handleChange(setEmail)}
+        placeholder="Email"
       />
     </div>
   );

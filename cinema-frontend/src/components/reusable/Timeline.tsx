@@ -17,8 +17,6 @@ export interface ITemplateDemoProps extends TimelineProps{
     schedule_id?: number;
 }
 
-
-
 export default function MoviesTimeLine({events}: ITemplateDemoProps) {
     const {push} = useRouter();
     const pathname = usePathname ();

@@ -1,4 +1,3 @@
-
 import React from "react";
 import { InputText, InputTextProps } from "primereact/inputtext";
 import { Button } from "primereact/button";
@@ -17,4 +16,3 @@ export default function CustomInput({isButtonVisible = true,handleSubmit,label,.
         </form>
     )
 }
-        

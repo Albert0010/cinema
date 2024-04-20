@@ -8,7 +8,4 @@ interface TSeat  {
     schedule:TSchedule
 }
 
-type TGetSeatsArgs = {room_id:string;movie_id:string}
-
-
-export type {TSeat,TGetSeatsArgs};
+export type {TSeat};

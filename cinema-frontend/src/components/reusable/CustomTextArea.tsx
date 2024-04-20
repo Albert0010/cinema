@@ -1,4 +1,3 @@
-
 import React from "react";
 import { InputTextarea, InputTextareaProps } from "primereact/inputtextarea";
 
@@ -11,4 +10,3 @@ export default function CustomInput({value,...inputprops}:ICustomInputProps) {
         </div>
     )
 }
-        

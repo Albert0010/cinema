@@ -1,15 +1,9 @@
+"use client"
 import {Menubar} from "primereact/menubar";
-import {getRooms} from "@/api/rooms";
+import useRooms from "@/hooks/useRooms";
 
-export default async function Header (){
-    const {data} = await getRooms();
-    const items = [{
-        label: 'Rooms',
-        icon: 'pi pi-step-forward',
-        items: [
-            ...data.map(({id,name}) => ({label: name, icon: 'pi pi-fw pi-file', url: `/rooms/${id}`}))
-        ],
-    }]
+export default function Header (){
+    const {items} = useRooms();
     return (
         <Menubar model={items}/>
     );
